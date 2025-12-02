@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quán nước Hương vị mỗi ngày</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+/* GIỮ NGUYÊN LOGO */
+header .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --------------------- HERO --------------------- */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(to right, #fff7e6, #fff);
+}
+
+.hero-left {
+    max-width: 55%;
+}
+
+.hero-left h2 {
+    font-size: 45px;
+    color: #333;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #444;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #ff7b00;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #e66e00;
+}
+
+/* Ảnh hero */
+.hero-right img {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* ----------------- DANH MỤC NỔI BẬT ----------------- */
+.home-categories {
+    text-align: center;
+    padding: 50px 8%;
+}
+
+.home-categories h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.category-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    transform: translateY(-6px);
+}
+
+.category-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.category-item p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 18px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- GIỮ NGUYÊN HEADER -->
+ <header class="header-container">
+        <div class="header-left">
+            <img src="images/logo.png" alt="Logo quán nước" class="logo">
+            <h1>Hương vị mỗi ngày</h1>
+        </div>
+
+        <div class="header-center">
+            <a href="quan nuoc.html" class="header-link">Menu đồ uống</a>
+            <a href="about.html" class="header-link">Giới thiệu</a>
+            <a href="contract.html" class="header-link">Liên hệ</a>
+            <a href="goiy.html" class="header-link">Gợi ý hôm nay</a>
+        </div>
+    </header>
+
+<!-- HERO ĐẸP – THU HÚT -->
+<section class="hero-section">
+    <div class="hero-left">
+        <h2>Thưởng thức<br> hương vị tươi mới mỗi ngày</h2>
+        <p>
+            Từ những nguyên liệu chọn lọc kỹ lưỡng, chúng tôi mang đến những ly nước 
+            ngon – sạch – đậm đà, phù hợp cho mọi khoảnh khắc của bạn.
+        </p>
+        <a href="quan nuoc.html" class="hero-btn">Xem Menu</a>
+    </div>
+
+    <div class="hero-right">
+        <img src="images/anh-cafe.jpg" alt="Đồ uống nổi bật">
+    </div>
+</section>
+
+<!-- DANH MỤC NỔI BẬT -->
+<section class="home-categories">
+    <h2>Danh mục nổi bật</h2>
+    <div class="category-box">
+        <div class="category-item" onclick="location.href='#menu'">
+            <img src="images/caphemuoi.jpg">
+            <p>Cà phê muối đậm hòa cùng lớp kem muối béo nhẹ, mằn mặn tạo hương vị độc đáo khó quên.</p>
+        </div>
+
+        <div class="category-item" onclick="location.href='#menu'">
+            <img src="images/Cach-lam-tra-sua-bang-tra-o-long-tea-plus-don-gian-tai-nha.jpg">
+            <p>Trà Oolong thanh nhẹ kết hợp sữa thơm béo, hậu vị ngọt dịu và dễ uống.</p>
+        </div>
+
+        <div class="category-item" onclick="location.href='#menu'">
+            <img src="images/hongtradualuoi.jpg">
+            <p>Hồng trà dưa lưới đậm vị pha cùng dưa lưới tươi mát, mang hương thơm dịu và ngọt tự nhiên.</p>
+        </div>
+
+        <div class="category-item" onclick="location.href='#menu'">
+            <img src="images/nuoc-cot-chanh-day.jpg">
+            <p>Chanh dây tươi mát, chua ngọt hài hòa, giúp giải khát và bổ sung vitamin.</p>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    © 2025 Quán nước Hương vị mỗi ngày
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
